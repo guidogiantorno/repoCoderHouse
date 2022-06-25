@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300&display=swap');
+
+@keyframes textopacity{
+from{opacity: 0;}
+to{opacity: 1;}
+
+}
+
+*{  font-family: "Roboto Flex", Sans-Serif ;
+	padding: 0;
+	margin: 0;
+
+}
+
+html{
+	font-size: 62.5%;
+}
+
+nav{
+	/*background-color: rgba(111, 111, 111, .2);*/
+	background-color: white;
+	padding: 10px 30px;
+	position: sticky;
+	top: 0;
+	border: solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+	nav ul{
+		list-style: none;
+		display: flex;
+}
+
+	nav ul li{
+			margin: 0px 10px;
+			animation-name: textopacity;
+			animation-duration: 4s;
+		}
+
+		nav ul li a{
+			font-size: 2.2rem;
+			text-decoration: none;
+			color:#45BF9D ;
+			font-family:"Roboto Flex", Sans-Serif ;
+			font-weight: 100;
+			hover;
+		}
+
+		nav ul li a:hover{
+			color: black;
+		}
+
+
+
+body{
+	/*background-image: url() ;*/
+	background-color: rgb(234, 234, 234) ;
+	overflow-x: hidden;
+
+
+}
+
+
+header img{
+	width: 100%;
+}
+
+footer{
+	/*background-color: lightgrey;*/
+	background: rgb(162,190,183);
+	background: linear-gradient(0deg, rgba(162,190,183,1) 12%, rgba(43,156,157,1) 37%, rgba(30,199,155,1) 56%, rgba(44,230,193,1) 100%);
+	padding: 10px;
+	margin: 10px;
+}
+
+h1,h2,h3{
+	font-family: "Roboto Flex", Sans-Serif;
+	color: 2D2A2A;
+	line-height: 3rem;
+
+}
+
+h1{
+	font-size: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	margin: 50px;
+	padding: 15px;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+h3{
+	font-size: 2.5rem;
+}
+
+p{
+	font-family: 'Roboto Flex', sans-serif;
+	font-size: 2rem;
+	font-weight:300 ;
+	line-height: 3rem;
+	color: #2D2A2A;
+
+}
+
+.animacionHeader{
+	height: 100vh;
+	animation-name:headerAnimation;
+	-mz-animation-name: headerAnimation ;
+	-o-animation-name: headerAnimation ;
+	-ms-animation-name: headerAnimation ;
+	-webkit-animation-name: headerAnimation ;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-size: cover;
+
+}
+
+@keyframes headerAnimation{
+	0%{background-image: url(../imagenes/Home.jpg)}
+	50%{background-image: url(../imagenes/Home1.jpg)}
+	100%{background-image: url(../imagenes/Home2.webp)}
+
+}
+
+
+
+/*Selectores de Clase*/
+
+
+.text-center{
+		text-align: center;
+}
+
+.border-solid{
+	border: solid;
+}
+
+.justify-content-2{
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+.margin-estandar{
+	margin: 10px;
+	padding: 10px;
+}
+
+.container{
+			padding: 10px;
+			display: flex;
+			
+		}
+
+.containerIndustries{
+			padding: 30px;
+			margin: 20px;
+			background-color:#45BF9D ;
+			display: flex;
+			}
+
+.justify-content{
+			justify-content: flex-end ;
+			flex-direction: row ;
+			align-items: center;			
+		}
+
+.justifyIndustries{
+			justify-content: space-between ;
+			flex-direction: row ;
+			align-items: center;			
+		}
+
+
+.flex-grow1{
+		flex-grow: 1;
+
+		}
+
+.flex-flow{
+	flex-flow: row wrap ;
+}
+
+.h-100{
+	height: 20px;
+		}
+
+.w-50{
+	width: 50%;
+		}
+
+.catalogo{
+	margin: 20px;
+	/*display flex*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+.pie{
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-size: 3em; 
+		}
+
+.bg-grey{
+			background-color: grey;
+		}
+
+.logo{
+	width: 200px;
+	animation-name: textopacity;
+	animation-duration: 2s;
+}
+
+
+
+
+.font-form-h{
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.font-form{
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.botonera {
+		/*position*/
+		position: sticky;
+		top: 0;
+		/*padding*/
+		padding: 10px 30px;
+		/**++++++++++**display flex en columna **+++++++++**/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+.secondNav{
+	padding: 10px 10px;
+	font-size: 1.3rem;
+	line-height: 1.6em;
+
+}
+
+
+
+
+/*Mobile First*/
+
+/*Grid layout*/
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"nav" 
+	"header"
+	"filtros"
+	"main"
+	"footer"  ;
+}
+
+/*Nombre a las areas del layout*/
+
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#filtros{
+	grid-area: filtros;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#main{
+	grid-area: main;
+}
+
+#footer{
+	grid-area: footer;
+
+
+}
+
+
+
+/*-------------------------media queries------------------*/
+
+
+/* min-width: 768px definimos 2cols con vw y 4 rows */
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 20vw 80vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"nav nav" 
+		"header header" 
+		"filtros main"  
+		"footer footer";
+	}
+
+
+	#filtros{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+}
+
+	.secondNav{
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+/* min-width: 1024px defino 2cols con vw y 4 rows */
+@media (min-width: 1024px){
+	
+	
+	/*width de los productos*/
+		
+	#main .catalogo.figure.img{
+		width: 400px;
+	}
+
+}
+
+/* min-width: 1200px cambio la botonera*/
+@media (min-width: 1200px){
+
+	.botonera{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	#main .catalogo.figure.img{
+		width: 600px;
+	}
+
+
+	
+	
+}
