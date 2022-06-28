@@ -9,6 +9,7 @@ to{opacity: 1;}
 *{  font-family: "Roboto Flex", Sans-Serif ;
 	padding: 0;
 	margin: 0;
+	font-weight: 100
 
 }
 
@@ -16,23 +17,7 @@ html{
 	font-size: 62.5%;
 }
 
-nav{
-	/*background-color: rgba(111, 111, 111, .2);*/
-	background-color: white;
-	padding: 10px 30px;
-	position: sticky;
-	top: 0;
-	border: solid;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 
-
-}
-	nav ul{
-		list-style: none;
-		display: flex;
-}
 
 	nav ul li{
 			margin: 0px 10px;
@@ -43,23 +28,17 @@ nav{
 		nav ul li a{
 			font-size: 2.2rem;
 			text-decoration: none;
-			color:#45BF9D ;
+			/*color:#45BF9D ;*/
 			font-family:"Roboto Flex", Sans-Serif ;
 			font-weight: 100;
 			hover;
 		}
 
-		nav ul li a:hover{
-			color: black;
-		}
-
-
-
+		
 body{
 	/*background-image: url() ;*/
 	background-color: rgb(234, 234, 234) ;
 	overflow-x: hidden;
-
 
 }
 
@@ -99,6 +78,15 @@ h3{
 	font-size: 2.5rem;
 }
 
+h5{
+	font-size: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	margin: 50px;
+	padding: 15px;
+}
+
+
 p{
 	font-family: 'Roboto Flex', sans-serif;
 	font-size: 2rem;
@@ -108,31 +96,14 @@ p{
 
 }
 
-.animacionHeader{
-	height: 100vh;
-	animation-name:headerAnimation;
-	-mz-animation-name: headerAnimation ;
-	-o-animation-name: headerAnimation ;
-	-ms-animation-name: headerAnimation ;
-	-webkit-animation-name: headerAnimation ;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	background-size: cover;
-
-}
-
-@keyframes headerAnimation{
-	0%{background-image: url(../imagenes/Home.jpg)}
-	50%{background-image: url(../imagenes/Home1.jpg)}
-	100%{background-image: url(../imagenes/Home2.webp)}
-
-}
-
 
 
 /*Selectores de Clase*/
 
+.text-color{
+	color:#45BF9D
+
+}
 
 .text-center{
 		text-align: center;
