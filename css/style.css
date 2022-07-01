@@ -6,10 +6,7 @@ to{opacity: 1;}
 
 }
 
-*{  font-family: "Roboto Flex", Sans-Serif ;
-	padding: 0;
-	margin: 0;
-	font-weight: 100
+* {  font-family: "Roboto Flex", Sans-Serif ;
 
 }
 
@@ -28,7 +25,7 @@ html{
 		nav ul li a{
 			font-size: 2.2rem;
 			text-decoration: none;
-			/*color:#45BF9D ;*/
+			color:#45BF9D ;
 			font-family:"Roboto Flex", Sans-Serif ;
 			font-weight: 100;
 			hover;
@@ -97,7 +94,6 @@ p{
 }
 
 
-
 /*Selectores de Clase*/
 
 .text-color{
@@ -106,7 +102,7 @@ p{
 }
 
 .bg-green{
-	background-color: ;:#45BF9D
+	background-color:#45BF9D;
 }
 
 .text-center{
@@ -129,17 +125,11 @@ p{
 }
 
 .container{
-			padding: 10px;
 			display: flex;
 			
 		}
 
-.containerIndustries{
-			padding: 30px;
-			margin: 20px;
-			background-color:#45BF9D ;
-			display: flex;
-			}
+
 
 .justify-content{
 			justify-content: flex-end ;
@@ -147,17 +137,9 @@ p{
 			align-items: center;			
 		}
 
-.justifyIndustries{
-			justify-content: space-between ;
-			flex-direction: row ;
-			align-items: center;			
-		}
 
 
-.flex-grow1{
-		flex-grow: 1;
 
-		}
 
 .flex-flow{
 	flex-flow: row wrap ;
@@ -189,16 +171,8 @@ p{
 	align-items: center;
 }
 
-.box{
-	padding: 20px;
-	text-align: center;
-	color: white;
-	font-size: 3em; 
-		}
 
-.bg-grey{
-			background-color: grey;
-		}
+
 
 .logo{
 	width: 200px;
@@ -344,4 +318,11 @@ p{
 
 	
 	
+}
+
+
+@media (min-width: 260px) and (max-width: 320px){
+	img[src= "../imagenes/LBV.PNG"]{
+		width: 125px;
+	}
 }
