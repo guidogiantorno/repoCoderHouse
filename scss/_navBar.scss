@@ -15,6 +15,7 @@ to{opacity: 1;}
 //botonera nesting
 
 .botonera{
+	background-color: map-get($map:$paleta,$key:'blanco');
 
 	img{
 		width: 200px;
@@ -34,11 +35,13 @@ to{opacity: 1;}
 				a{
 				font-size: 2.2rem;
 				text-decoration: none;
-				color:$mainColor ;
+				// color:$mainColor ;
+				color: map-get($map:$paleta,$key:'verdeLBV');
 				font-family:$mainFont ;
 				font-weight: 100;
 				&:hover{
-					color: black;
+					// color: black;
+					color: map-get($map:$paleta,$key:'negro');
 					text-decoration: underline;
 				}
 		}
@@ -51,12 +54,6 @@ to{opacity: 1;}
 // 	animation-name: textopacity;
 // 	animation-duration: 2s;
 // }
-
-
-	
-
-
-
 
 //.botonera {
 //		/*position*/

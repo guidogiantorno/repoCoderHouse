@@ -1,0 +1,16 @@
+
+
+/*mixins*/
+
+@mixin texto($size,$line-height){
+	font-size:$size;
+	line-height:$line-height;
+	text-align: center;
+}
+
+@mixin d-flex($justify,$align,$direction){
+	display: flex;
+	justify-content: $justify;
+	align-items:$align;
+	flex-direction: $direction;
+}

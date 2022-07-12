@@ -1,6 +1,18 @@
 //vars
 
-$mainColor: #45BF9D;
-$secondaryColor: rgb(234, 234, 234);
-$grey: #2D2A2A;
+// $mainColor: #45BF9D;
+// $secondaryColor: rgb(234, 234, 234);
+// $grey: #2D2A2A;
+
+$paleta:(
+	'blanco': white,
+	'gris': #2D2A2A,
+	'grisOscuro':#979DA6,
+	'grisClaro':#C1D4D9,
+	'verdeOscuro':#027373,
+	'verde':#04BFAD,
+	'verdeLBV':#45BF9D,
+	'negro':#0E0F13,
+	'grisOriginal': rgb(234, 234, 234),
+		);
 

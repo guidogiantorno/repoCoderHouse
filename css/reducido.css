@@ -70,8 +70,8 @@ h3 {
   text-align: center; }
 
 h5 {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
   text-align: center;
   margin: 50px;
   padding: 15px; }
@@ -85,27 +85,15 @@ p {
   font-weight: 300; }
 
 /*Selectores de Clase*/
-.text-center, .catalogo {
+.text-center {
   text-align: center; }
 
 .margin-estandar {
   margin: 10px;
   padding: 10px; }
 
-.text-color {
-  color: #45BF9D; }
-
-.bg-green {
-  background-color: #45BF9D; }
-
 .border-solid {
   border: solid; }
-
-.justify-content {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row; }
 
 .justify-content-2 {
   display: flex;
@@ -113,13 +101,8 @@ p {
   align-items: center;
   flex-direction: row; }
 
-.container, .catalogo {
+.container {
   display: flex; }
-
-.catalogo {
-  flex-direction: column;
-  align-items: center;
-  margin: 20px; }
 
 .pie {
   display: flex;
@@ -128,29 +111,13 @@ p {
   flex-direction: row;
   padding: 20px; }
 
-.img-fit img {
-  height: 100%;
-  object-fit: cover; }
-
 /*Mobile First*/
 /*Grid layout*/
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nav"  "header" "filtros" "main" "footer"; }
 
 /*Nombre a las areas del layout*/
-#mainNav {
-  grid-area: nav; }
 
 #header {
   grid-area: header; }
-
-#filtros {
-  grid-area: filtros;
-  flex-direction: row;
-  justify-content: space-evenly; }
 
 #main {
   grid-area: main; }
@@ -160,30 +127,14 @@ p {
 
 /*-------------------------media queries------------------*/
 /* min-width: 768px definimos 2cols con vw y 4 rows */
-@media (min-width: 768px) {
-  .contenedor {
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "nav nav"  "header header"  "filtros main"   "footer footer"; }
-  #filtros {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .secondNav {
-    flex-direction: column;
-    align-items: center; } }
 
 /* min-width: 1024px defino 2cols con vw y 4 rows */
 @media (min-width: 1024px) {
-  /*width de los productos*/
-  #main .catalogo.figure.img {
-    width: 400px; } }
+  /*width de los productos*/ }
 
 /* min-width: 1200px cambio la botonera*/
 @media (min-width: 1200px) {
   .botonera {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
-  #main .catalogo.figure.img {
-    width: 600px; } }
+    align-items: center; } }
