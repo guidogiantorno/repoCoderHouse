@@ -84,6 +84,11 @@ p {
   color: #2D2A2A;
   font-weight: 300; }
 
+.font-index-p {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center; }
+
 /*Selectores de Clase*/
 .text-center, .catalogo {
   text-align: center; }
@@ -96,7 +101,7 @@ p {
   color: #45BF9D; }
 
 .bg-green {
-  background-color: #45BF9D; }
+  background-color: #04BFAD; }
 
 .border-solid {
   border: solid; }
@@ -117,9 +122,9 @@ p {
   display: flex; }
 
 .catalogo {
-  flex-direction: column;
-  align-items: center;
-  margin: 20px; }
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
 .pie {
   display: flex;
@@ -132,58 +137,5 @@ p {
   height: 100%;
   object-fit: cover; }
 
-/*Mobile First*/
-/*Grid layout*/
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nav"  "header" "filtros" "main" "footer"; }
-
-/*Nombre a las areas del layout*/
-#mainNav {
-  grid-area: nav; }
-
-#header {
-  grid-area: header; }
-
-#filtros {
-  grid-area: filtros;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-#main {
-  grid-area: main; }
-
-#footer {
-  grid-area: footer; }
-
-/*-------------------------media queries------------------*/
-/* min-width: 768px definimos 2cols con vw y 4 rows */
-@media (min-width: 768px) {
-  .contenedor {
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "nav nav"  "header header"  "filtros main"   "footer footer"; }
-  #filtros {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .secondNav {
-    flex-direction: column;
-    align-items: center; } }
-
 /* min-width: 1024px defino 2cols con vw y 4 rows */
-@media (min-width: 1024px) {
-  /*width de los productos*/
-  #main .catalogo.figure.img {
-    width: 400px; } }
-
 /* min-width: 1200px cambio la botonera*/
-@media (min-width: 1200px) {
-  .botonera {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-  #main .catalogo.figure.img {
-    width: 600px; } }

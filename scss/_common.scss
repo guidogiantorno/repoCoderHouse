@@ -57,12 +57,17 @@ p{
 
 }
 
+.font-index-p{
+	@include texto($texts,4rem);
+}
 
 /*Selectores de Clase*/
 
 .text-center{
 		text-align: center;
 }
+
+
 
 .margin-estandar{
 	margin: 10px;
@@ -74,7 +79,8 @@ p{
 }
 
 .bg-green{
-	background-color: map-get($map:$paleta,$key:'verdeLBV');
+	background-color: map-get($map:$paleta,$key:'verde');
+
 }
 
 .border-solid{
@@ -96,10 +102,11 @@ p{
 
 .catalogo{
 	@extend.container;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	@extend.text-center;
-	margin: 20px;
+	//margin: 20px;
 
 }
 
