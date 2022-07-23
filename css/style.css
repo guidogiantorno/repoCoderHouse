@@ -89,6 +89,14 @@ p {
   line-height: 4rem;
   text-align: center; }
 
+.font-button {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center; }
+
+.font-formulario {
+  font-size: 1.5rem; }
+
 /*Selectores de Clase*/
 .text-center, .catalogo {
   text-align: center; }
@@ -136,6 +144,3 @@ p {
 .img-fit img {
   height: 100%;
   object-fit: cover; }
-
-/* min-width: 1024px defino 2cols con vw y 4 rows */
-/* min-width: 1200px cambio la botonera*/

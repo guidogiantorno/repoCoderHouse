@@ -61,6 +61,15 @@ p{
 	@include texto($texts,4rem);
 }
 
+.font-button{
+	@include texto($textxxs,3rem);
+}
+
+.font-formulario{
+	font-size:$textxxs;
+}
+
+
 /*Selectores de Clase*/
 
 .text-center{
@@ -118,11 +127,8 @@ p{
 .img-fit{
 
 	img{	
-	//width: 150px;
    	height: 100%;
   	object-fit: cover;
-  	//margin: 2px 2px;
-  	//padding: 2px 2px;
   	}
 
 }
