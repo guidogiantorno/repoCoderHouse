@@ -140,7 +140,3 @@ p {
   align-items: center;
   flex-direction: row;
   padding: 20px; }
-
-.img-fit img {
-  height: 100%;
-  object-fit: cover; }
